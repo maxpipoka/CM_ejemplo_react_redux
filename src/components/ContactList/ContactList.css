@@ -1,0 +1,48 @@
+/* Estilos generales de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Estilos de la cabecera de la tabla */
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos de las celdas de la tabla */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Estilos para las celdas pares de la tabla (opcional) */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para resaltar cuando se pasa el ratón sobre una fila (opcional) */
+  tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Estilos para el botón de borrar */
+  button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff4d4d;
+  }

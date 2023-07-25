@@ -38,6 +38,8 @@ const contactSlice = createSlice(
                   'username': action.payload.username,
                   'email': action.payload.email};
                 newContact.id = state.length() + 1;
+
+                const id = crypto.randomUUID()
                 state.push(newContact);
             },
             deleteContactById: (state, action) => {
