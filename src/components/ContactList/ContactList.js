@@ -1,6 +1,8 @@
-import { useSelector, useDispatch } from "react-redux";
 import { deleteContactById } from "../../redux/reducers/contacts/contactSlice";
 import './ContactList.css'
+
+import { useSelector, useDispatch } from 'react-redux'
+
 
 
 const ContactList = () => {
@@ -22,7 +24,7 @@ const ContactList = () => {
                             <button onClick={() => handleRemoveContact(contact.id)}>Borrar contacto</button>
                         </tr>
                         )
-                    };
+                    }
             </table>
             )
 };

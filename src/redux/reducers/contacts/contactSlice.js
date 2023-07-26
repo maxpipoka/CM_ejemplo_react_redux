@@ -33,18 +33,14 @@ const contactSlice = createSlice(
         initialState: contacts,
         reducers: {
             addContact: (state, action) => {
-                const newContact = {
-                  'name': action.payload.name, 
-                  'username': action.payload.username,
-                  'email': action.payload.email};
-                newContact.id = state.length() + 1;
 
-                const id = crypto.randomUUID()
-                state.push(newContact);
+              const id = crypto.randomUUID();
+              state.push({id, ...action.payload})
             },
+            
             deleteContactById: (state, action) => {
               const id_to_delete = action.payload;
-                return state.filter(contact => contact.id !== id_to_delete );
+              return state.filter(contact => contact.id !== id_to_delete )
              }
         },
     });
